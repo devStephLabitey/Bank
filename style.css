@@ -1,0 +1,147 @@
+
+body{
+    /* background: rgba(5, 40, 5, 0.454);
+    */
+    font-family: 'Poppins', sans-serif;
+
+}
+
+ 
+.classe1{
+    background-image: url("./image/1.jpeg") ;
+    padding: 30px;
+    height: 250px;
+    border-radius: 10px;
+    
+}
+header{
+    
+    background:rgba(0, 128, 0, 0.977);
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20px;
+    
+   
+}
+
+.hr1{
+    background-color: black;
+    height: 4px;
+    top: 50px;
+
+}
+
+
+
+   .btn1{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin-top: 50px;
+    padding: 7px;
+    background: rgba(23, 128, 0, 0.644);
+   
+
+}
+
+
+.btn2{
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    margin-top: 50px;
+    padding-left: 12px;
+    position: absolute;
+    background: rgba(0, 128, 0, 0.644);
+    
+   
+}
+
+.classe2{
+    /* background:rgb(89, 88, 88); */
+    color: black;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    padding-top: 0.3px;
+    border-radius:10px ;
+    margin-left: 100px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+}
+
+.solde{
+    background:rgba(9, 61, 9, 0.196);
+    border-radius: 10px;
+    border-color: rgb(10, 10, 10);
+    height: 40px;
+    font-size: 20px;
+    margin-top: 15px;
+    width: 30vh;
+}
+
+/* .classe3{
+    background:rgb(89, 88, 88);
+    color: white;
+    height: 6vh;
+    font-size: 12px;
+    width: 40vh;
+    border-radius: 10px;  
+    
+    
+}
+ */
+
+.btn3{
+    height: 6vh;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    width: 40vh;
+    margin: 20px;
+    background: green;
+    border: none;
+    border-radius: 10px;
+}
+
+.alimenter{
+    top: -80px;
+    position: relative;
+    margin-left: 100px;
+}
+
+.btn4{
+    background: green;
+    height: 5vh;
+    width: 50vh;
+    color: white;
+    font-size: 13px;
+    border: none;
+    border-radius: 10px;
+    padding: 0.1px;
+    position: absolute;
+    right: 400px;
+    top: 550px;
+}
+.tr{
+    height: 3vh;
+}
+.transfert{
+    position: absolute;
+    right: 160px;
+    top: 540px;
+}
+
+h3{
+    right: 100px;
+     position: absolute;
+      top: 650px;
+      color: white;
+}
+
+footer{
+    background: rgba(16, 61, 16, 0.568);
+}

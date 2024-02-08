@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta  charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="navbar">
+    <div class="logo">
+        Steph<span>Bank </span>
+    </div>    
+    <div id="compte">
+    Comptes
+    </div>
+</div>
+<div class="bigbg">
+    
+<div id="diffcompte">
+   <i id="remove" class="fa fa-plus"></i>
+    <ul>
+        <li><a href="./epargne.html"><span class="class1">Epargne</span><img src="./image/epargne.jpg" alt=""></a></li>
+        <li><a href=""><span class="class2">courant</span><img src="./image/courant.jpg" alt=""></a></li>
+        <li><a href=""><span class="class3">Gold</span><img src="./image/gold.jpg" alt=""></a></li>
+    </ul>
+    <div class="create">
+        Créer un nouveau compte
+    </div>
+
+</div>
+</div>
+
+    <div class="acc">
+    <div>    Bienvenue à</div>  <div class="logo">
+            Steph<span>Bank </span>
+        </div>  
+    </div>
+    <div id="create2">
+        Créer un nouveau compte
+    </div>
+
+    <div id="form">
+        <div class="div">Veuillez remplir le formulaire</div>
+        <input type="number" placeholder="Identifiant">
+        <input type="text" placeholder="Nom">
+        <input type="text" placeholder="Prénoms">
+        <select name="" id="">
+            <option value="">Type d'épargne</option>
+            <option value="">courant</option>
+            <option value="">Epargne</option>
+            <option value="">Gold</option>
+        </select>
+        <div class="bts">
+            <button type="submit">Créer</button>
+            <button id="annuler">Annuler</button>
+        </div>
+    </div>
+    <menu>
+        <article></article>
+        <article></article>
+        <article></article>
+    </menu>
+    <footer>La banque qui nous unis</footer>
+
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap'); 
+*{
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+}
+footer{
+    margin-top: 45vh;
+    margin-left: 75vh;
+    color: blue;
+    font-size: 30px;
+    
+}
+menu{
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+}
+article{
+    height: 50vh;
+    width: 70vh;
+    background: red;
+}
+.acc{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    gap: 10px;
+    margin-top: 50px;
+    margin-left: 65vh;
+}
+/* .acc .div1{
+
+} */
+.acc .logo{
+    background: white;
+    width: 45vh;
+    border-radius: 5px;
+}
+body{
+    background: url(./image/pexels-maitree-rimthong-1602726.jpg) no-repeat left/cover ;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 150vh;
+    padding-left: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background: whitesmoke;
+}
+.logo
+{
+  color: #ff4500;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+span{
+    color: #17cf;   
+}
+#compte{
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    background: #ff4500;
+    border-radius: 10px ;
+    cursor: pointer;
+}
+#compte:hover{
+    background: #f1561e;
+}
+
+#diffcompte{
+position: absolute;
+top: 50%;                           
+left: -100%;
+transform: translate(-50%,-50%);
+background: rgba(27, 8, 114, 0.349);
+height: 80vh;
+padding-top: 26vh;
+width: 171.7vh;
+padding-left: 38vh;
+z-index: -5;
+backdrop-filter: blur(10px);
+scale: 0;
+ 
+}
+#diffcompte.difftog{
+    scale: 1;
+}
+.fa-plus{
+    transform: rotate(45deg);
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-size: 30px;
+    color: white;
+    background: rgba(245, 245, 245, 0.438);
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-plus:hover{
+    background: rgba(255, 255, 255, 0.158);
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+a{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+li img{
+    height: 40vh;
+}
+.class1{
+    color: white;
+    background: green;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.class2{
+    color: white;
+    background: #17cf;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.class3{
+    color: white;
+    background: gold;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.bigbg{
+    background: red;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.create{
+    text-align: center;
+    margin-top: 40px ;
+    border-radius: 10px;
+    color: white;
+    background: #ff4500;
+    width: 45vh;
+    padding: 10px 10px ;
+    margin-left: 45vh;
+    cursor: pointer;
+}
+#create2{
+    text-align: center;
+    margin-top: 40px ;
+    border-radius: 10px;
+    color: white;
+    background: #ff4500;
+    width: 45vh;
+    padding: 10px 10px ;
+    margin-left: 80vh;
+    cursor: pointer;
+}
+#diffcompte.difftogg{
+   scale: 0;
+}
+#form.formulaire{
+    scale: 1;
+}
+#form{
+    position: absolute;
+    background: rgba(245, 245, 245, 0.377);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 5vh;
+    text-align: center;
+    gap: 5vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    height: 70vh;
+    scale: 0;
+    width: 50vh;
+    flex-direction: column;
+}
+#form input,select{
+    height: 4vh;
+}
+button[type="submit"]{
+    color: white;
+    padding: 5px 10px;
+    background: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#annuler{
+    color: #fff;
+    border-radius: 5px;
+    background: #c40808;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+</style>
+        <script>
+       const comptes = document.getElementById('compte'),
+            diff = document.getElementById('diffcompte'),
+            move = document.getElementById('remove');
+            const create = document.getElementById('create2'),
+            formu = document.getElementById('form')
+            remove = document.getElementById('annuler');
+            comptes.addEventListener('click', ()=>{
+                diff.classList.toggle('difftog')
+            })
+            move.addEventListener('click', ()=>{
+                diff.classList.toggle('difftogg')
+            })
+            create.addEventListener('click',()=>{
+                formu.classList.toggle('formulaire')     
+            })
+            remove.addEventListener('click',()=>{
+                formu.classList.toggle('formulaire')     
+            })
+
+
+        </script>
+</body>
+</html>
